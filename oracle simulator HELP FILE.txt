@@ -1,0 +1,64 @@
+DATA SOURCE NAME:-
+Oracle
+
+
+
+ORACLE 10g:-
+user:SYSTEM
+password:puneet
+
+
+QUERIES:-
+
+Create table waitinguser
+(username varchar2(400),
+password varchar2(400),
+name varchar2(400),
+email varchar2(400));
+
+Create table users
+(username varchar2(400),
+password varchar2(400),
+name varchar2(400),
+email varchar2(400));
+
+
+INSERT INTO USERS VALUES('admin','admin','administrator','admin@oraclesimulator.com');
+
+
+
+
+USER/OPERATIONAL MANUAL
+
+•	A user need to install JDK 1.6.0_05 in his computer.
+•	After this the user need to install ORACLE 10g in his computer.
+•	At the time of installation the user should give 
+	username:SYSTEM 
+	Password: puneet
+•	The user should create two tables-“waitinguser” and “users”.
+•	There should be four fields in the waiting user table-
+1.	Name.
+2.	E-mail ID.
+3.	User ID.
+4.	Password.
+•	 There should be four fields in user table-
+1.	Name.
+2.	E-mail ID.
+3.	User ID.
+4.	Password.
+
+•	User should create a ADMIN, whose username should be ‘ADMIN’ and password should be ‘admin’ in the user table.
+	QUERY:-
+	INSERT INTO USERS VALUES('admin','admin','administrator','admin@oraclesimulator.com');
+•	The user should create data source(ODBC) named “Oracle” .
+•	Now the user should be able to open the program and he should run the direct executable file.
+•	If the user is not ADMIN and he is using this software for the first time then he should have to fill the sign-up form.
+•	ADMIN should approve his request.
+•	Then the user should be able to login with his username and password and should be able to access the database.
+•	If the user is a ADMIN then he should login with his username ‘ADMIN’ and password ‘admin’.
+
+•	The ADMIN should be able to see two lists on login-
+	1.	Waiting list.
+	2.	Approved list.
+•	The ADMIN should transfer a user from waiting list to approved list, otherwise he should let the user be in the waiting list.
+	If approved the user should be authorized to use ‘ORACLE SIMULATOR’
